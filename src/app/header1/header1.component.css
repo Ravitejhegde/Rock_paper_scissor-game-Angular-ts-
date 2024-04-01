@@ -1,0 +1,12 @@
+.main.head{
+    background-color:black;
+}
+.container-fluid{
+    padding-top: 10px;
+    text-align: center;
+    background-color: #494d5f;
+}
+img{
+    width: 1000px;
+    height: 80px;
+}

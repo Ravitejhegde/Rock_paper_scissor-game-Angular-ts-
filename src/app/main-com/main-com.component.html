@@ -1,0 +1,134 @@
+
+<!--paper rock header(first appeare)-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <!--col1-->
+        <div class="col-md-10 text-center">
+           
+            <button [hidden]="start_but" class="btn btn-success main_btn" (click)="start_game()">start game </button>
+            <div [hidden]="!start_but">
+
+
+                <div class="col-6">
+
+                </div>
+<!--container 11-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 ">
+<!--111-->
+            <div class="row">
+                <div class="col-12 bg-success mt-2 rounded text-center hum1">HUMAN</div>
+            </div>
+
+
+            <button style="font-style: italic;" (click)="paper()" class="btn btn-primary human"> paper</button>
+            <button (click)="rock()" class="btn btn-primary human"> rock</button>
+            <button (click)="sci()" class="btn btn-primary human"> scissor</button>
+        </div>
+
+        <!--112-->
+        <div class="col-6 main_box">
+            <h1>main container</h1>
+<!--1121-->
+            <div class="row">
+
+                <div class="col-6 game_vid ">
+                    <h6>human</h6> 
+                    <img [src]="l_img_url" height="150px">
+                    
+                </div>
+                <div class="col-6 game_vid">
+                    <h6>machine</h6>
+                    
+                    <img [src]="r_img_url" height="150px">
+
+                    
+                </div>
+
+
+            </div>
+
+            <!--match number row-->
+
+            <div class="row">
+                <div class="col-12"> 
+                    <h2>
+                        match number: <span style="color: red;"> {{t_match}} </span>
+                    </h2>
+                </div>
+            </div>
+
+            <!--score-->
+            <div class="row">
+                <div class="col-6">
+                    <h2>Human</h2>
+                    <hr style="border: 3px solid black;">
+                    <h4>Win : <span style="color: green; font-weight: 700; box-flex-group: brown;">{{h_win}}</span></h4>
+                    <h4>draw :{{h_draw}}</h4>
+                    <h4>Loss : {{h_lost}}</h4>
+                </div>
+                <div class="col-6"> <h2>Machine</h2>
+                    <hr style="border: 3px solid black;">
+                    <h4>Win : <span style="color: green; font-weight: 700; box-flex-group: brown;">{{m_win}}</span></h4>
+                    <h4>draw :{{m_draw}}</h4>
+                    <h4>Loss :{{m_lost}}</h4>
+                </div>
+
+            </div>
+<!--
+            <div class="row">
+
+                <div class="col-6 game_vid ">
+                    <h6>human</h6> 
+                    <img src="assets/images/lm.jpg" height="150px">
+                    
+                </div>
+                <div class="col-6 game_vid">
+                    <h6>machine</h6>
+                    
+                    <img src="assets/images/rm.jpg" height="150px">
+
+                    
+                </div>
+
+                
+            </div>
+    
+    <div class="row">
+
+        <div class="col-6 game_vid ">
+            <h6>human</h6> 
+            <img src="assets/images/ls.jpg" height="150px">
+            
+        </div>
+        <div class="col-6 game_vid">
+            <h6>machine</h6>
+            
+            <img src="assets/images/rs.jpg" height="150px">
+
+            
+        </div> 
+
+        
+    </div> -->
+    
+        </div>
+
+        <!--113-->
+        <div class="col-3">
+
+            <div class="row">
+                <div class="col-12 bg-success mt-2 rounded text-center hum1">MACHINE</div>
+            </div>
+
+
+            <button class="btn btn-primary human"> paper</button>
+            <button class="btn btn-primary human"> rock</button>
+            <button class="btn btn-primary human"> scissor</button>
+        </div>
+    </div>
+</div>
